@@ -1,0 +1,61 @@
+que es un repositorio en git?
+
+* una manera de almacenar de forma virtual un directorio(carpeta)
+  permitiendo respaldar versiones del mismo para poder accederlas cuando se necesite 
+*nos facilita trabajar en equipo de una manera ordenada si seguimos los alineamientos GIT 
+  y  se establece una estructura de trabajo.
+
+
+conceptos claves:
+
+que es un branch (rama)?
+una rama en GIT es un puntero móvil a un commit especifico. este puntero
+se va actualizando por cada nuevo commit integrado al mismo branch, ya sea 
+de forma directa o mediante un merge .
+
+que es un commit?
+es la forma que se tiene para poder guardar los cambios de forma local que fuimos preparando en el branch donde nos encontremos
+
+como especificamos un cambio?
+mediante el uso del comanto $git add NombreDelArchivo o $git add nombreDirectorio/nombreArchivo
+estaremos indicando a nuestra branch que dichos cambios seleccionados son los que deseamos preparar para agregarlos al commit
+
+que es un merge ?
+es la unio  de una brench en otra.
+
+comandos de GIT:
+*git init ( nos permite crear un repositorio en git)     
+*git cloner url (clonar archivo por ejemplo desde git hub)
+*git add . (nos permite incorporar a nuestros commit todos los cambios que se realizaron en la rama)
+*git add nombreDirectorio/nombreArchivo (es lo mismo que el anterior pero en este caso se especifica que archivo queres incorporar)
+*git commit -m "Breve comentario descriptivo" (subir el archivo a la rama)
+*git merge nombreBranch (es para unir una branch a otra)
+*git status ( nos muestra los cambios que fuimos realizando en la rama que estamos parados)
+*git branch (nos muestra todas las branch o ramas que creamos poniendo * en la rama q estamos parados)
+*git checkout nombreBranch ( con este comando nos permite pararnos en otro branch que ya exista)
+*git checkout -b nombreNuevoBranch ( y este comando es para crear una nueva branch)
+*git push nombreRemote nombreBranch (interarctuar con git hub y subir los cambios )
+*git pull nombreRemote nombreBranch (interarctuar con git hub y bajar los cambios )
+
+git --version
+git config --list
+
+pwd te dice la carpeta en donde estas ubicado
+cd (navegar en carpetas)
+cd/ te lleva al home
+
+git status te dice las carpetas que tenes y si se agregaron o no
+para agregarlas se usa git add y la carpeta (tambien se usa cuando agregamos algo nuevo a los archivos)
+
+
+git commit -m "mensaje para recordar de que se trata el repositorio (no es obligatorio pero si es una buena practica)"
+
+git log mas el nombre del archivo muestra la historia del archivo
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Kanky9/repositorio.git
+git push -u origin main
+
