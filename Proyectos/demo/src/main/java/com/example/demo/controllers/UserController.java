@@ -83,7 +83,7 @@ public class UserController {
         user.setPrecio(precio);
         user.setStock(stock);
         userRepository.save(user);
-        return "Se grabó el nuevo user.";
+        return "Se grabó el nuevo producto.";
     }
 
    
